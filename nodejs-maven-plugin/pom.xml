@@ -146,7 +146,7 @@
             <activation>
                 <os>
                     <family>linux</family>
-                    <arch>x86</arch>
+                    <arch>i686</arch>
                 </os>
             </activation>
             <properties>
@@ -158,7 +158,7 @@
             <activation>
                 <os>
                     <family>linux</family>
-                    <arch>x64</arch>
+                    <arch>amd64</arch>
                 </os>
             </activation>
             <properties>
