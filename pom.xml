@@ -1,19 +1,41 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
 
-  <groupId>com.github.skwakman.nodejs-maven-plugin</groupId>
-  <artifactId>nodejs-maven-plugin-parent</artifactId>
-  <version>1.0-SNAPSHOT</version>
-  <packaging>pom</packaging>
+    <groupId>com.github.skwakman.nodejs-maven-plugin</groupId>
+    <artifactId>nodejs-maven-plugin-parent</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
 
-  <name>nodejs-maven-plugin Maven Plugin parent</name>
+    <name>nodejs-maven-plugin Maven Plugin parent</name>
 
-  <url>https://github.com/skwakman/nodejs-maven-plugin</url>
+    <url>https://github.com/skwakman/nodejs-maven-plugin</url>
 
-  <properties>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-  </properties>
+    <scm>
+        <connection>scm:git:git://github.com/skwakman/nodejs-maven-plugin.git</connection>
+        <developerConnection>scm:git:git@github.com:skwakman/nodejs-maven-plugin.git</developerConnection>
+        <url>git://github.com/skwakman/nodejs-maven-plugin.git</url>
+    </scm>
+
+    <licenses>
+        <license>
+            <name>Creative Commons GNU LGPL, Version 2.1</name>
+            <url>http://creativecommons.org/licenses/LGPL/2.1/</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+
+    <developers>
+        <developer>
+            <id>skwakman</id>
+            <name>Sannie Kwakman</name>
+            <email>skwakman@xebia.com</email>
+        </developer>
+    </developers>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
 
     <modules>
         <module>nodejs-maven-plugin</module>

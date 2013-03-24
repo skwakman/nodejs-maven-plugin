@@ -1,0 +1,4 @@
+nodejs extract maven plugin
+Copyright (c) 2013 Sannie Kwakman <skwakman@xebia.com>
+
+This software is open source. For details, see LICENSE.txt and NOTICE.txt.

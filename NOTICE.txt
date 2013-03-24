@@ -1,0 +1,7 @@
+Copyright (c) 2013 Sannie Kwakman <skwakman@xebia.com>
+
+nodejs-maven-plugin is released under the LGPL. See LICENSE.txt.
+
+Third party libraries
+---------------------
+This plugin extracts NodeJS. See LICENSES.txt for NodeJS' license.
