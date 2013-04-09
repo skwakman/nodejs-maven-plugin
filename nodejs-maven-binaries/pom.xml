@@ -8,7 +8,9 @@
   <packaging>pom</packaging>
 
   <name>nodejs-maven-binaries</name>
-  <url>http://maven.apache.org</url>
+  <description>Jar file containing NodeJS binaries</description>
+
+  <url>https://github.com/skwakman/nodejs-maven-plugin</url>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

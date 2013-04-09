@@ -14,6 +14,7 @@
     <packaging>maven-plugin</packaging>
 
     <name>nodejs-maven-plugin Maven Plugin</name>
+    <description>Maven plugin for supplying a NodeJS binary on a build environment.</description>
 
     <url>https://github.com/skwakman/nodejs-maven-plugin</url>
 

@@ -8,6 +8,7 @@
     <packaging>pom</packaging>
 
     <name>nodejs-maven-plugin Maven Plugin parent</name>
+    <description>Parent POM of nodejs-maven-plugin</description>
 
     <url>https://github.com/skwakman/nodejs-maven-plugin</url>
 
