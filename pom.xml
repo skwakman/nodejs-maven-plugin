@@ -40,5 +40,6 @@
     <modules>
         <module>nodejs-maven-plugin</module>
         <module>nodejs-maven-binaries</module>
+        <module>nodejs-maven-plugin-test</module>
     </modules>
 </project>
