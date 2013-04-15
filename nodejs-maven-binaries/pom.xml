@@ -12,6 +12,7 @@
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <nodejs.distributions.directory>${basedir}/nodejs-distributions/</nodejs.distributions.directory>
   </properties>
 
   <dependencies>
@@ -30,12 +31,12 @@
                 <version>2.4</version>
                 <configuration>
                     <descriptors>
-                        <descriptor>src/main/assembly/linux-x86.xml</descriptor>
                         <descriptor>src/main/assembly/linux-x64.xml</descriptor>
-                        <descriptor>src/main/assembly/macos-x86.xml</descriptor>
+                        <descriptor>src/main/assembly/linux-x86.xml</descriptor>
                         <descriptor>src/main/assembly/macos-x64.xml</descriptor>
-                        <descriptor>src/main/assembly/win-x86.xml</descriptor>
+                        <descriptor>src/main/assembly/macos-x86.xml</descriptor>
                         <descriptor>src/main/assembly/win-x64.xml</descriptor>
+                        <descriptor>src/main/assembly/win-x86.xml</descriptor>
                     </descriptors>
                 </configuration>
                 <executions>
