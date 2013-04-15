@@ -1,7 +1,7 @@
 nodejs-maven-plugin
 ===================
 
-Extracts a NodeJS executable to a Maven build environment.
+Extracts a NodeJS executable to a Maven build environment. Requires Maven 3.x or higher.
 
 ### Usage
 The following POM plugin configuration will extract the NodeJs executable to file `target/nodejs/node`
@@ -19,10 +19,10 @@ The following POM plugin configuration will extract the NodeJs executable to fil
           </execution>
         </executions>
         <configuration>
-            <!-- target file for node binary -->
-            <targetLocation>
-                ${basedir}/target/nodejs/node
-            </targetLocation>
+            <!-- target directory for node binaries -->
+            <targetDirectory>
+                ${basedir}/target/nodejs/
+            </targetDirectory>
         </configuration>
       </plugin>
     </plugins>
