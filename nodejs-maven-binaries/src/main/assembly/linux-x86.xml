@@ -13,7 +13,7 @@
                 0744
             </fileMode>
             <directory>
-                ${nodejs.distributions.directory}linux-86/
+                ${nodejs.distributions.directory}linux-x86/
             </directory>
             <outputDirectory>
                 /
