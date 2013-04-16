@@ -10,7 +10,7 @@
 
     <groupId>com.github.skwakman.nodejs-maven-plugin</groupId>
     <artifactId>nodejs-maven-binaries</artifactId>
-    <version>0.8.21</version>
+    <version>0.8.21-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <name>nodejs-maven-binaries</name>
@@ -19,9 +19,10 @@
     <url>https://github.com/skwakman/nodejs-maven-plugin</url>
 
     <scm>
-        <connection>scm:git:git://github.com/skwakman/nodejs-maven-plugin.git</connection>
+        <connection>scm:git:git@github.com:skwakman/nodejs-maven-plugin.git</connection>
         <developerConnection>scm:git:git@github.com:skwakman/nodejs-maven-plugin.git</developerConnection>
-        <url>git://github.com/skwakman/nodejs-maven-plugin.git</url>
+        <url>http://github.com/skwakman/nodejs-maven-plugin.git</url>
+        <tag>binaries-${project.version}</tag>
     </scm>
 
     <licenses>
