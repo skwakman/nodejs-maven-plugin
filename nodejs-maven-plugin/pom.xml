@@ -4,11 +4,11 @@
     <parent>
         <groupId>com.github.skwakman.nodejs-maven-plugin</groupId>
         <artifactId>nodejs-maven-plugin-parent</artifactId>
-        <version>1.0.1</version>
+        <version>1.0.2-SNAPSHOT</version>
     </parent>
 
     <artifactId>nodejs-maven-plugin</artifactId>
-    <version>1.0.1</version>
+    <version>1.0.2-SNAPSHOT</version>
     <packaging>maven-plugin</packaging>
 
     <name>nodejs-maven-plugin Maven Plugin</name>
