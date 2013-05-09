@@ -47,7 +47,7 @@
         </dependency>
 
         <dependency>
-            <groupId>${project.groupId}</groupId>
+            <groupId>com.github.skwakman.nodejs-maven-binaries</groupId>
             <artifactId>nodejs-maven-binaries</artifactId>
             <version>0.8.21</version>
             <classifier>${nodejs.classifier}</classifier>
