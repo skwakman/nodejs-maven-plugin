@@ -9,7 +9,7 @@ The following POM plugin configuration will extract the NodeJs executable to dir
     <plugins>
       <plugin>
         <groupId>com.github.skwakman.nodejs-maven-plugin</groupId>
-        <artifactId>nodejs-maven-plugin-parent</artifactId>
+        <artifactId>nodejs-maven-plugin</artifactId>
         <version>1.0.2</version>
         <executions>
           <execution>
