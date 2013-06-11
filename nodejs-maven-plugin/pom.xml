@@ -170,6 +170,30 @@
             <activation>
                 <os>
                     <family>linux</family>
+                    <arch>x86</arch>
+                </os>
+            </activation>
+            <properties>
+                <nodejs.classifier>linux-x86</nodejs.classifier>
+            </properties>
+        </profile>
+        <profile>
+            <id>linux-x86-386</id>
+            <activation>
+                <os>
+                    <family>linux</family>
+                    <arch>i386</arch>
+                </os>
+            </activation>
+            <properties>
+                <nodejs.classifier>linux-x86</nodejs.classifier>
+            </properties>
+        </profile>
+        <profile>
+            <id>linux-x86-686</id>
+            <activation>
+                <os>
+                    <family>linux</family>
                     <arch>i686</arch>
                 </os>
             </activation>
@@ -178,7 +202,19 @@
             </properties>
         </profile>
         <profile>
-            <id>linux-x64</id>
+            <id>linux-x64-x86_64</id>
+            <activation>
+                <os>
+                    <family>linux</family>
+                    <arch>x86_64</arch>
+                </os>
+            </activation>
+            <properties>
+                <nodejs.classifier>linux-x64</nodejs.classifier>
+            </properties>
+        </profile>
+        <profile>
+            <id>linux-x64-amd64</id>
             <activation>
                 <os>
                     <family>linux</family>
