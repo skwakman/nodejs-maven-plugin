@@ -9,7 +9,7 @@
 
     <groupId>com.github.skwakman.nodejs-maven-plugin</groupId>
     <artifactId>nodejs-maven-plugin-parent</artifactId>
-    <version>1.0.4-SNAPSHOT</version>
+    <version>1.0.4</version>
     <packaging>pom</packaging>
 
     <name>nodejs-maven-plugin Maven Plugin parent</name>
