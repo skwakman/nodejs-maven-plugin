@@ -10,7 +10,7 @@ The following POM plugin configuration will extract the NodeJs executable to dir
       <plugin>
         <groupId>com.github.skwakman.nodejs-maven-plugin</groupId>
         <artifactId>nodejs-maven-plugin</artifactId>
-        <version>1.0.4</version>
+        <version>1.0.5-node.0.10.25</version>
         <executions>
           <execution>
             <goals>
@@ -29,7 +29,7 @@ The following POM plugin configuration will extract the NodeJs executable to dir
 
 ### Supported platforms
 
-The plugin currently supplies a NodeJS binary for the following platforms:
+The plugin supplies a NodeJS binary for the following platforms:
 
 * Windows (32 and 64 bit)
 * Mac OS (32 and 64 bit)
