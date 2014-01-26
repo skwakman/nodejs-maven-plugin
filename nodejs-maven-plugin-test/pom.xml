@@ -3,7 +3,7 @@
     <parent>
         <groupId>com.github.skwakman.nodejs-maven-plugin</groupId>
         <artifactId>nodejs-maven-plugin-parent</artifactId>
-        <version>1.0.5-SNAPSHOT</version>
+        <version>1.0.5-node-0.10.25-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
