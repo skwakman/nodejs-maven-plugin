@@ -49,7 +49,7 @@
         <dependency>
             <groupId>com.github.skwakman.nodejs-maven-binaries</groupId>
             <artifactId>nodejs-maven-binaries</artifactId>
-            <version>0.10.25-SNAPSHOT</version>
+            <version>0.10.25</version>
             <classifier>${nodejs.classifier}</classifier>
             <type>zip</type>
         </dependency>
