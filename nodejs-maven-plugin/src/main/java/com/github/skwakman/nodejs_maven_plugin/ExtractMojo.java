@@ -58,7 +58,7 @@ public class ExtractMojo extends AbstractMojo {
 		File targetDir = new File(targetDirectory);
 		prepareTargetDirectory(targetDir);
 
-		if (!this.overwrite && !containsNodeBinary(targetDir)) {
+		if (!this.overwrite && containsNodeBinary(targetDir)) {
 			this.getLog().debug("Node binary already found in target directory, not extracting anything");
 		} else {
 			extractArtifact(findNodeJsBinariesArtifact(pluginDescriptor.getArtifacts()), targetDir);
