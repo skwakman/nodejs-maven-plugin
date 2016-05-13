@@ -30,6 +30,13 @@ public class ExtractMojo extends AbstractMojo {
 	private String targetDirectory;
 
 	/**
+	 * When false, this plugin won't do anything if the targetDirectory already contains a node binary
+	 *
+	 * @parameter default-value=true
+	 */
+	private boolean overwrite;
+
+	/**
 	 * @component
 	 */
 	protected ArchiverManager archiverManager;
@@ -49,9 +56,13 @@ public class ExtractMojo extends AbstractMojo {
 	 */
 	public void execute() throws MojoExecutionException {
 		File targetDir = new File(targetDirectory);
-
 		prepareTargetDirectory(targetDir);
-		extractArtifact(findNodeJsBinariesArtifact(pluginDescriptor.getArtifacts()), targetDir);
+
+		if (!this.overwrite && !containsNodeBinary(targetDir)) {
+			this.getLog().debug("Node binary already found in target directory, not extracting anything");
+		} else {
+			extractArtifact(findNodeJsBinariesArtifact(pluginDescriptor.getArtifacts()), targetDir);
+		}
 	}
 
 	private void prepareTargetDirectory(File targetDir) throws MojoExecutionException {
@@ -61,7 +72,10 @@ public class ExtractMojo extends AbstractMojo {
 		} catch (IOException e) {
 			throw new MojoExecutionException("Could not prepare targetDirectory for extraction: " + e.getMessage(), e);
 		}
+	}
 
+	private boolean containsNodeBinary(File targetDir) {
+		return new File(targetDir, "node").exists() || new File(targetDir, "node.exe").exists();
 	}
 
 	private Artifact findNodeJsBinariesArtifact(List<Artifact> artifacts) throws MojoExecutionException {

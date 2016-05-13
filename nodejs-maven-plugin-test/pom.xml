@@ -56,6 +56,7 @@
                             <goal>extract</goal>
                         </goals>
                         <configuration>
+                            <overwrite>false</overwrite>
                             <targetDirectory>${project.build.testOutputDirectory}/nodejs/extracted/</targetDirectory>
                         </configuration>
                     </execution>
